@@ -51,8 +51,7 @@ user_input.to_i-1
   def turn
     puts "Please enter 1-9"
     user_input = gets.strip
-    input_to_index(user_input)
-    return = index
+    index = input_to_index(user_input)
   value = turn_count
     if valid_move(index) == true
       move(index,value)
