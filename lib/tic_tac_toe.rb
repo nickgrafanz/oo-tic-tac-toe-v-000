@@ -35,4 +35,7 @@ user_input.to_i-1
       true
     end
   end
+
+  def valid_move?
+    if (position_taken?(index) == false) &&
 end
