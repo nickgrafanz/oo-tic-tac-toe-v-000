@@ -87,4 +87,11 @@ user_input.to_i-1
     return true
   end
 end
+
+def over?
+  if won? || full? || draw? == true
+    return true
+  end
+end
+
 end
