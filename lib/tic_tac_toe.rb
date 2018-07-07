@@ -94,11 +94,11 @@ def over?
   end
 end
 
-def winner
+def winner 
   if won? == false
     return nil
   end
-  if won?[0] == "X"
+  if [won?[0]] == "X"
     return "X"
   else "O"
   end
