@@ -60,7 +60,7 @@ user_input.to_i-1
     if valid_move?(index) == true
       move(index,value)
         @board[index] = value
-      display_board  
+      display_board
     else
       turn
     end
