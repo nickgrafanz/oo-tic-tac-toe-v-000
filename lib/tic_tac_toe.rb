@@ -27,4 +27,11 @@ user_input.to_i-1
   def move(index,value)
     @board[index] = value
   end
+
+  def position_taken?(index)
+    if @board[index] == "X" || "O"
+      false
+    else
+      true
+    end
 end
