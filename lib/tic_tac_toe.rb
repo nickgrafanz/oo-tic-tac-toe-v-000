@@ -78,4 +78,7 @@ user_input.to_i-1
     false
   end
 
+  def full?
+    @board.none?{|space| space == " " }
+  end
 end
