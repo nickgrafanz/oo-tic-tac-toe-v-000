@@ -37,5 +37,10 @@ user_input.to_i-1
   end
 
   def valid_move?
-    if (position_taken?(index) == false) &&
+    if (position_taken?(index) == false) && index.between(0,8)
+      true
+    else
+      false
+    end
+  end
 end
