@@ -65,4 +65,17 @@ user_input.to_i-1
       turn
     end
   end
+
+  def won?
+    WIN_COMBINATIONS.each do |win_index|
+      board_position_1 = @board[win_index[0]]
+      board_position_2 = @board[win_index[1]]
+      board_position_3 = @board[win_index[2]]
+      if board_position_1 == board_position_2 && board_position_2 == board_position_3 && position_taken?(win_index[0])
+        return win_index
+      end
+    end
+    false
+  end
+
 end
