@@ -94,4 +94,14 @@ def over?
   end
 end
 
+def winner 
+  if won? == false
+    return nil
+  end
+  if won?[0] == "X"
+    return "X"
+  else "O"
+  end
+end
+
 end
