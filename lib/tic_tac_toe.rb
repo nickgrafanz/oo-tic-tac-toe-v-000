@@ -114,6 +114,7 @@ def play
     puts "Congratulations O!"
   else
   puts "Cat's Game!"
+  end
 end
 
 end
