@@ -81,4 +81,10 @@ user_input.to_i-1
   def full?
     @board.none?{|space| space == " " }
   end
+
+  def draw?
+  if won? == false && full? == true
+    return true
+  end
+end
 end
