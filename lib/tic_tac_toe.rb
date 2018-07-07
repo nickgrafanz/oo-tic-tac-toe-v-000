@@ -44,16 +44,21 @@ user_input.to_i-1
     end
   end
 
+  def turn_count
+      @board.count{|value| value == "X" || value == "O"}
+    end
+
   def turn
     puts "Please enter 1-9"
     user_input = gets.strip
     input_to_index(user_input)
     return = index
+  value = turn_count
     if valid_move(index) == true
       move(index,value)
         @board[index] = value
     else
-      turn 
+      turn
     end
   end
-end 
+end
