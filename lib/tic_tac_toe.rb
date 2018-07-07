@@ -94,7 +94,7 @@ def over?
   end
 end
 
-def winner 
+def winner
   if won? == false
     return nil
   end
