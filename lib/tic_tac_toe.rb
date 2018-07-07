@@ -56,7 +56,7 @@ user_input.to_i-1
     puts "Please enter 1-9"
     user_input = gets.strip
     index = input_to_index(user_input)
-  value = turn_count
+  value = current_player
     if valid_move(index) == true
       move(index,value)
         @board[index] = value
