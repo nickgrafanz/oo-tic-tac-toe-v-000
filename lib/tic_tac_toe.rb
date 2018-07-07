@@ -43,4 +43,17 @@ user_input.to_i-1
       false
     end
   end
-end
+
+  def turn
+    puts "Please enter 1-9"
+    user_input = gets.strip
+    input_to_index(user_input)
+    return = index
+    if valid_move(index) == true
+      move(index,value)
+        @board[index] = value
+    else
+      turn 
+    end
+  end
+end 
