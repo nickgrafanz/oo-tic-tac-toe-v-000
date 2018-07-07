@@ -104,4 +104,16 @@ def winner
   end
 end
 
+def play
+  until over? == true
+    turn
+  end
+  if winner == "X"
+    puts "Congratulations X!"
+  elsif winner == "O"
+    puts "Congratulations O!"
+  else
+  puts "Cat's Game!"
+end
+
 end
