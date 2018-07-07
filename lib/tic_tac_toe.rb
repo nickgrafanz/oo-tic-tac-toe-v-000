@@ -26,4 +26,5 @@ user_input.to_i-1
 
   def move(index,value)
     @board[index] = value
+  end
 end
