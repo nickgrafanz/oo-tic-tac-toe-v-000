@@ -29,7 +29,7 @@ user_input.to_i-1
   end
 
   def position_taken?(index)
-    if @board[index] == "X" || "O"
+    if board[index] == "X" || "O"
       true
     else
       false
